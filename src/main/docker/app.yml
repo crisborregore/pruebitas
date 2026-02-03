@@ -1,21 +1,21 @@
 # This configuration is intended for development purpose, it's **your** responsibility to harden it for production
-name: aver
+name: dd
 services:
   app:
-    image: aver
+    image: dd
     environment:
       - _JAVA_OPTIONS=-Xmx512m -Xms256m
       - SPRING_PROFILES_ACTIVE=prod,api-docs
       - MANAGEMENT_PROMETHEUS_METRICS_EXPORT_ENABLED=true
-      - SPRING_DATA_MONGODB_URI=mongodb://mongodb:27017/aver
-    ports:
-      - 127.0.0.1:8080:8080
+      - SPRING_CLOUD_CONSUL_HOST=consul
+      - SPRING_CLOUD_CONSUL_PORT=8500
+      - SPRING_DATA_MONGODB_URI=mongodb://mongodb:27017/dd
     healthcheck:
       test:
         - CMD
         - curl
         - -f
-        - http://localhost:8080/management/health
+        - http://localhost:8081/management/health
       interval: 5s
       timeout: 5s
       retries: 40
@@ -26,3 +26,11 @@ services:
     extends:
       file: ./mongodb.yml
       service: mongodb
+  consul:
+    extends:
+      file: ./consul.yml
+      service: consul
+  consul-config-loader:
+    extends:
+      file: ./consul.yml
+      service: consul-config-loader

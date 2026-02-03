@@ -1,7 +1,9 @@
-# aver
+# dd
 
 This application was generated using JHipster 8.1.0, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v8.1.0](https://www.jhipster.tech/documentation-archive/v8.1.0).
 
+This is a "microservice" application intended to be part of a microservice architecture, please refer to the [Doing microservices with JHipster][] page of the documentation for more information.
+This application is configured for Service Discovery and Configuration with Consul. On launch, it will refuse to start if it is not able to connect to Consul at [http://localhost:8500](http://localhost:8500). For more information, read our documentation on [Service Discovery and Configuration with Consul][].
 
 ## Project Structure
 
@@ -36,7 +38,14 @@ You will only need to run this command when dependencies change in [package.json
 npm install
 ```
 
-We use npm scripts and [Webpack][] as our build system.
+We use npm scripts and [Angular CLI][] with [Webpack][] as our build system.
+
+If you are using hazelcast as a cache, you will have to launch a cache server.
+To start your cache server, run:
+
+```
+docker compose -f src/main/docker/hazelcast-management-center.yml up -d
+```
 
 
 Run the following commands in two separate terminals to create a blissful development experience where your browser
@@ -57,19 +66,11 @@ The `npm run` command will list all of the scripts available to run for this pro
 
 JHipster ships with PWA (Progressive Web App) support, and it's turned off by default. One of the main components of a PWA is a service worker.
 
-The service worker initialization code is commented out by default. To enable it, uncomment the following code in `src/main/webapp/index.html`:
+The service worker initialization code is disabled by default. To enable it, uncomment the following code in `src/main/webapp/app/app.config.ts`:
 
-```html
-<script>
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker
-        .register('./service-worker.js')
-        .then(function() { console.log('Service Worker Registered'); });
-    }
-</script>
+```typescript
+ServiceWorkerModule.register('ngsw-worker.js', { enabled: false }),
 ```
-
-Note: [Workbox](https://developers.google.com/web/tools/workbox/) powers JHipster's service worker. It dynamically generates the `service-worker.js` file.
 
 ### Managing dependencies
 
@@ -86,16 +87,78 @@ npm install --save-dev --save-exact @types/leaflet
 ```
 
 Then you would import the JS and CSS files specified in library's installation instructions so that [Webpack][] knows about them:
+Edit [src/main/webapp/app/app.config.ts](src/main/webapp/app/app.config.ts) file:
+
+```
+import 'leaflet/dist/leaflet.js';
+```
+
+Edit [src/main/webapp/content/scss/vendor.scss](src/main/webapp/content/scss/vendor.scss) file:
+
+```
+@import 'leaflet/dist/leaflet.css';
+```
+
 Note: There are still a few other things remaining to do for Leaflet that we won't detail here.
 
 For further instructions on how to develop with JHipster, have a look at [Using JHipster in development][].
+
+### Developing Microfrontend
+
+Microservices doesn't contain every required backend feature to allow microfrontends to run alone.
+You must start a pre-built gateway version or from source.
+
+Start gateway from source:
+
+```
+cd gateway
+npm run docker:db:up # start database if necessary
+npm run docker:others:up # start service discovery and authentication service if necessary
+npm run app:start # alias for ./(mvnw|gradlew)
+```
+
+Microfrontend's `build-watch` script is configured to watch and compile microfrontend's sources and synchronizes with gateway's frontend.
+Start it using:
+
+```
+cd microfrontend
+npm run docker:db:up # start database if necessary
+npm run build-watch
+```
+
+It's possible to run microfrontend's frontend standalone using:
+
+```
+cd microfrontend
+npm run docker:db:up # start database if necessary
+npm watch # alias for `npm start` and `npm run backend:start` in parallel
+```
+
+
+### Using Angular CLI
+
+You can also use [Angular CLI][] to generate some custom client code.
+
+For example, the following command:
+
+```
+ng generate component my-component
+```
+
+will generate few files:
+
+```
+create src/main/webapp/app/my-component/my-component.component.html
+create src/main/webapp/app/my-component/my-component.component.ts
+update src/main/webapp/app/app.config.ts
+```
 
 
 ## Building for production
 
 ### Packaging as jar
 
-To build the final jar and optimize the aver application for production, run:
+To build the final jar and optimize the dd application for production, run:
 
 ```
 ./mvnw -Pprod clean verify
@@ -108,7 +171,7 @@ To ensure everything worked, run:
 java -jar target/*.jar
 ```
 
-Then navigate to [http://localhost:8080](http://localhost:8080) in your browser.
+Then navigate to [http://localhost:8081](http://localhost:8081) in your browser.
 
 Refer to [Using JHipster in production][] for more details.
 
@@ -227,7 +290,9 @@ To configure CI for your project, run the ci-cd sub-generator (`jhipster ci-cd`)
 
 [JHipster Homepage and latest documentation]: https://www.jhipster.tech
 [JHipster 8.1.0 archive]: https://www.jhipster.tech/documentation-archive/v8.1.0
+[Doing microservices with JHipster]: https://www.jhipster.tech/documentation-archive/v8.1.0/microservices-architecture/
 [Using JHipster in development]: https://www.jhipster.tech/documentation-archive/v8.1.0/development/
+[Service Discovery and Configuration with Consul]: https://www.jhipster.tech/documentation-archive/v8.1.0/microservices-architecture/#consul
 [Using Docker and Docker-Compose]: https://www.jhipster.tech/documentation-archive/v8.1.0/docker-compose
 [Using JHipster in production]: https://www.jhipster.tech/documentation-archive/v8.1.0/production/
 [Running tests page]: https://www.jhipster.tech/documentation-archive/v8.1.0/running-tests/
@@ -241,3 +306,4 @@ To configure CI for your project, run the ci-cd sub-generator (`jhipster ci-cd`)
 [Jest]: https://facebook.github.io/jest/
 [Leaflet]: https://leafletjs.com/
 [DefinitelyTyped]: https://definitelytyped.org/
+[Angular CLI]: https://cli.angular.io/

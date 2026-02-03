@@ -16,7 +16,7 @@
 
 mongock:
   migration-scan-package:
-    - fsd.fs.df.config.dbmigrations
+    - k.k.k.config.dbmigrations
   mongo-db:
     read-concern: local
     write-concern:
@@ -25,7 +25,15 @@ mongock:
 
 spring:
   application:
-    name: aver
+    name: dd
+  cloud:
+    consul:
+      discovery:
+        enabled: false
+        instanceId: ${spring.application.name}:${spring.application.instance-id:${random.value}}
+      config:
+        enabled: false
+      enabled: false
   jackson:
     serialization:
       write-durations-as-timestamps: false
@@ -35,21 +43,15 @@ spring:
     allow-bean-definition-overriding: true
   messages:
     basename: i18n/messages
-  security:
-    user:
-      name: test
-      password: test
-      roles:
-        - USER
   task:
     execution:
-      thread-name-prefix: aver-task-
+      thread-name-prefix: dd-task-
       pool:
         core-size: 1
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: aver-scheduling-
+      thread-name-prefix: dd-scheduling-
       pool:
         size: 20
   thymeleaf:
@@ -66,9 +68,9 @@ server:
 # ===================================================================
 jhipster:
   clientApp:
-    name: "averApp"
+    name: "ddApp"
   mail:
-    from: aver@localhost.com
+    from: dd@localhost.com
     base-url: http://127.0.0.1:8080
   logging:
     # To test json console appender
@@ -82,7 +84,7 @@ jhipster:
     authentication:
       jwt:
         # This token must be encoded using Base64 (you can type `echo 'secret-key'|base64` on your command line)
-        base64-secret: MjYxZWY5ZGJjOWZjNmI2N2ZlMGM1NjhkNTk5OWQ4NjEzZmVlZThiNzc3ZmU4NWFlYWUzMDY1NGM0Y2EyMmE3YzA4OTMxYzJlZTNmNDFiNzkzMGQ3YWYzYzFmZTNlZGNjNDlkMmVjYWNiNGQ4NzEzZDg4MDczZGIyNmVkNGIxNjI=
+        base64-secret: Yzk1Mjc5MzU3NTNjN2NhZDcyNDUxYjBkZDcwOTRkZDQxZTZhMWFhMDE3ZTk1MzNlZjVkMTIyZjRjMWViOTA1YmMwODA0NDE5ODhjMzIwZWY4NmE4OWMzNDZhZDk4Zjc2NDYwMzI0YmVkMTQzY2VkOTFhZmYxNWM5YmY1MTk5OTY=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
         token-validity-in-seconds-for-remember-me: 86400
