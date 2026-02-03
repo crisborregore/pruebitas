@@ -1,0 +1,30 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "authManagement": false,
+    "authType": "jwt",
+    "authenticationType": "jwt",
+    "baseName": "aver",
+    "clientFramework": "react",
+    "creationTimestamp": 1770107073054,
+    "dataBaseName": "aver",
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "devServerPort": 9060,
+    "enableHibernateCache": false,
+    "enableTranslation": false,
+    "entities": [],
+    "frontFramework": "react",
+    "internalization": false,
+    "javaPackageName": "fsd.fs.df",
+    "jhipsterVersion": "8.1.0",
+    "jwtSecretKey": "MjYxZWY5ZGJjOWZjNmI2N2ZlMGM1NjhkNTk5OWQ4NjEzZmVlZThiNzc3ZmU4NWFlYWUzMDY1NGM0Y2EyMmE3YzA4OTMxYzJlZTNmNDFiNzkzMGQ3YWYzYzFmZTNlZGNjNDlkMmVjYWNiNGQ4NzEzZDg4MDczZGIyNmVkNGIxNjI=",
+    "languages": [
+      "es"
+    ],
+    "nativeLanguage": "es",
+    "packageName": "fsd.fs.df",
+    "prodDatabaseType": "mongodb",
+    "skipUserManagement": true
+  }
+}
