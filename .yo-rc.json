@@ -1,0 +1,30 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "authManagement": false,
+    "authType": "oauth2",
+    "authenticationType": "oauth2",
+    "baseName": "repogitprueba",
+    "clientFramework": "angular",
+    "creationTimestamp": 1770298254419,
+    "dataBaseName": "repogitprueba",
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "devServerPort": 4200,
+    "enableHibernateCache": false,
+    "enableTranslation": false,
+    "entities": [],
+    "frontFramework": "angular",
+    "internalization": false,
+    "javaPackageName": "jhg.jhg.jf",
+    "jhipsterVersion": "8.1.0",
+    "languages": [
+      "es"
+    ],
+    "messageBroker": "kafka",
+    "nativeLanguage": "es",
+    "packageName": "jhg.jhg.jf",
+    "prodDatabaseType": "mongodb",
+    "skipUserManagement": true
+  }
+}

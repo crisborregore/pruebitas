@@ -1,0 +1,3 @@
+org.springframework.test.context.ContextCustomizerFactory = jhg.jhg.jf.config.\
+    TestContainersSpringContextCustomizerFactory,jhg.jhg.jf.config.\
+    KafkaTestContainersSpringContextCustomizerFactory
