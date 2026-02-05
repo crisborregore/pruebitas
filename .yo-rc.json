@@ -1,0 +1,30 @@
+{
+  "generator-jhipster": {
+    "applicationType": "microservice",
+    "authManagement": false,
+    "authType": "jwt",
+    "authenticationType": "jwt",
+    "baseName": "prueba",
+    "clientFramework": "react",
+    "creationTimestamp": 1770296409289,
+    "dataBaseName": "prueba",
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "devServerPort": 9060,
+    "enableHibernateCache": false,
+    "enableTranslation": false,
+    "entities": [],
+    "frontFramework": "react",
+    "internalization": false,
+    "javaPackageName": "hgr.rtg.hg",
+    "jhipsterVersion": "8.1.0",
+    "jwtSecretKey": "Yjk5YWY4ZDY3NjZjOWNiOWVhOThlNzM3NDFjYjAxZDZkODk2ZDU4MWJlYWFiOGI1NWI3Nzc4ODg4ZDNmODljZWFkZWE2OWE3M2NjMWI3ODBmNWZkNjdiODVjNjM3MTcxMmEwYWE1YjZlM2NiNGI5ZjEyOTRlMmRlOTdmY2JjZjQ=",
+    "languages": [
+      "es"
+    ],
+    "nativeLanguage": "es",
+    "packageName": "hgr.rtg.hg",
+    "prodDatabaseType": "mongodb",
+    "skipUserManagement": true
+  }
+}
