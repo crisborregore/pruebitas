@@ -1,0 +1,43 @@
+# This configuration is intended for development purpose, it's **your** responsibility to harden it for production
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+name: asdad
+=======
+name: dsadadad
+>>>>>>> Stashed changes
+=======
+name: dasasdads
+>>>>>>> Stashed changes
+services:
+  mongodb:
+    image: mongo:7.0.4
+    # If you want to expose these ports outside your dev PC,
+    # remove the "127.0.0.1:" prefix
+    ports:
+      - 127.0.0.1:27017:27017
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    command: mongos --configdb csvr/asdad-mongodb-config --bind_ip 0.0.0.0
+=======
+    command: mongos --configdb csvr/dsadadad-mongodb-config --bind_ip 0.0.0.0
+>>>>>>> Stashed changes
+=======
+    command: mongos --configdb csvr/dasasdads-mongodb-config --bind_ip 0.0.0.0
+>>>>>>> Stashed changes
+  mongodb-node:
+    build:
+      context: .
+      dockerfile: mongodb/MongoDB.Dockerfile
+    command: mongod --shardsvr --replSet rs1
+  mongodb-config:
+    image: mongo:7.0.4
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    container_name: asdad-mongodb-config
+=======
+    container_name: dsadadad-mongodb-config
+>>>>>>> Stashed changes
+=======
+    container_name: dasasdads-mongodb-config
+>>>>>>> Stashed changes
+    command: mongod --configsvr --dbpath /data/db --replSet csvr

@@ -1,0 +1,18 @@
+configserver:
+  name: Docker Consul Service
+  status: Connected to Consul Server running in Docker
+
+jhipster:
+  security:
+    authentication:
+      jwt:
+        # secret key which should be base64 encoded and changed in production
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+        base64-secret: NDJkNjFkMzE2ZmRjOWZhN2YyZWE3NjIxYTZlMDg0NmY5MTM3MjFkNzNhMjBjMDg3MDUzOTllNjRlMGJlYWM2Mjc0ODM1NDdhODY1ZWVhZTdhMDE4YWQ1MjIxYjBjM2VhNjg0YjNlNTc2NjFkOTE4ZTMxN2E2ZTk0MDE3NmI0MWM=
+=======
+        base64-secret: Y2ZhMGI3YmYxMDBhYTUzOWI4NmI3NDEyNGEyYWMwYTY0ODdjZWY1NDM3NTgxNmFlM2JlNDU3YzJhYzI0Zjk0OWE4ZWEzNTkyNzBmOGU3MGVmYWJiMDczYjY3MTFmNmIzMmY5MzI0YTNkMWMxMzMwZDU0MjU1NzZkMWE3NDg4NjU=
+>>>>>>> Stashed changes
+=======
+        base64-secret: YmM3M2VmYmQ0MjJmNzYyOTFlMWJkZTUyYzEyNDRmYzc2MTRiN2Y1M2FiODhjNjkwZWYxZTBhYmYxYWQ5ZTRjZjBjMDkzYjFmOGIyNGFkZGYwZjhiNGExMzNmYTQ1OGQ4MGU1ZTZlZGI3YTg3ZjM5NDFlNDAzZmM0MjNiNmFmY2Q=
+>>>>>>> Stashed changes
