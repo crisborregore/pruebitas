@@ -1,0 +1,30 @@
+{
+  "generator-jhipster": {
+    "applicationType": "microservice",
+    "authManagement": false,
+    "authType": "oauth2",
+    "authenticationType": "oauth2",
+    "baseName": "asdad",
+    "clientFramework": "angular",
+    "creationTimestamp": 1771326943552,
+    "dataBaseName": "asdad",
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "devServerPort": 4200,
+    "enableHibernateCache": false,
+    "enableTranslation": false,
+    "entities": [],
+    "frontFramework": "angular",
+    "internalization": false,
+    "javaPackageName": "k.k.k",
+    "jhipsterVersion": "8.1.0",
+    "jwtSecretKey": "NDJkNjFkMzE2ZmRjOWZhN2YyZWE3NjIxYTZlMDg0NmY5MTM3MjFkNzNhMjBjMDg3MDUzOTllNjRlMGJlYWM2Mjc0ODM1NDdhODY1ZWVhZTdhMDE4YWQ1MjIxYjBjM2VhNjg0YjNlNTc2NjFkOTE4ZTMxN2E2ZTk0MDE3NmI0MWM=",
+    "languages": [
+      "zh-cn"
+    ],
+    "nativeLanguage": "zh-cn",
+    "packageName": "k.k.k",
+    "prodDatabaseType": "mongodb",
+    "skipUserManagement": true
+  }
+}

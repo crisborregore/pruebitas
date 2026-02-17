@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-md-3">
+    <span class="hipster img-fluid rounded"></span>
+  </div>
+
+  <div class="col-md-9">
+    <h1 class="display-4"><span>欢迎, Java Hipster!</span> (Asdad)</h1>
+
+    <p class="lead">这里是首页</p>
+
+    <div>
+      @if (account !== null) {
+        <div class="alert alert-success">
+        @if (account) {
+          <span id="home-logged-message">您目前是以 &quot;{{ account.login }}&quot; 账号登录.</span>
+        }
+        </div>
+      } @else {
+        <div class="alert alert-warning">
+          <span>如果您要</span>
+          <a class="alert-link" (click)="login()">登录</a><span>, 您可以使用默认账号:<br/>- 管理员 (账号=&quot;admin&quot;和密码=&quot;admin&quot;) <br/>- 普通用户 (账号=&quot;user&quot;和密码=&quot;user&quot;).</span>
+        </div>
+      }
+    </div>
+
+    <p>如果您有任何有关 JHipster 的问题, 可以查阅下列资源:</p>
+
+    <ul>
+      <li><a href="https://www.jhipster.tech/" target="_blank" rel="noopener noreferrer">JHipster 首頁</a></li>
+      <li><a href="https://stackoverflow.com/tags/jhipster/info" target="_blank" rel="noopener noreferrer">Stack Overflow 上关于 JHipster 的讨论</a></li>
+      <li><a href="https://github.com/jhipster/generator-jhipster/issues?state=open" target="_blank" rel="noopener noreferrer">JHipster 的缺陷追踪</a></li>
+      <li><a href="https://gitter.im/jhipster/generator-jhipster" target="_blank" rel="noopener noreferrer">JHipster public chat room</a></li>
+      <li><a href="https://twitter.com/jhipster" target="_blank" rel="noopener noreferrer">在 Twitter 上联络 &#64;jhipster</a></li>
+    </ul>
+
+    <p>
+      <span>如果您喜欢 JHipster, 请记得给我们加星在</span> <a href="https://github.com/jhipster/generator-jhipster" target="_blank" rel="noopener noreferrer">GitHub</a>!
+    </p>
+  </div>
+</div>
