@@ -7,7 +7,11 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   selector: 'jhi-item-count',
   template: `
+<<<<<<< Updated upstream
     <div>显示第 {{first}} - {{second}} 条，共 {{total}} 条</div>
+=======
+    <div>Showing {{first}} - {{second}} of {{total}} items.</div>
+>>>>>>> Stashed changes
   `,
 })
 export default class ItemCountComponent {

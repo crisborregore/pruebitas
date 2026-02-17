@@ -3,12 +3,21 @@
                              https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+<<<<<<< Updated upstream
     <groupId>k.k.k</groupId>
     <artifactId>asdad</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Asdad</name>
     <description>Description for Asdad</description>
+=======
+    <groupId>g.g.g</groupId>
+    <artifactId>dsadadad</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>Dsadadad</name>
+    <description>Description for Dsadadad</description>
+>>>>>>> Stashed changes
 
     <properties>
         <!--
@@ -24,7 +33,11 @@
         <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
+<<<<<<< Updated upstream
         <start-class>k.k.k.AsdadApp</start-class>
+=======
+        <start-class>g.g.g.DsadadadApp</start-class>
+>>>>>>> Stashed changes
         <argLine>-Djava.security.egd=file:/dev/./urandom -Xmx1G</argLine>
         <m2e.apt.activation>jdt_apt</m2e.apt.activation>
         <run.addResources>false</run.addResources>
@@ -402,7 +415,11 @@
                             </platforms>
                         </from>
                         <to>
+<<<<<<< Updated upstream
                             <image>asdad:latest</image>
+=======
+                            <image>dsadadad:latest</image>
+>>>>>>> Stashed changes
                         </to>
                         <container>
                             <entrypoint>

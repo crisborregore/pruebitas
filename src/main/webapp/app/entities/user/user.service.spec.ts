@@ -77,7 +77,11 @@ describe('User Service', () => {
       });
 
       it('should add only unique User to an array', () => {
+<<<<<<< Updated upstream
         const userArray: IUser[] = [{"id":"ABC"}, {"id":"CBA"}, {"id":"1ecebf05-ce83-4b42-9f9c-87eeab4839ed"}];
+=======
+        const userArray: IUser[] = [{"id":"ABC"}, {"id":"CBA"}, {"id":"c68caeff-8327-468a-bc2f-7e0f1e7ca639"}];
+>>>>>>> Stashed changes
         const userCollection: IUser[] = [{"id":"CBA"}];
         expectedResult = service.addUserToCollectionIfMissing(userCollection, ...userArray);
         expect(expectedResult).toHaveLength(3);

@@ -98,17 +98,30 @@ management:
 
 mongock:
   migration-scan-package:
+<<<<<<< Updated upstream
     - k.k.k.config.dbmigrations
 
 spring:
   application:
     name: asdad
+=======
+    - g.g.g.config.dbmigrations
+
+spring:
+  application:
+    name: dsadadad
+>>>>>>> Stashed changes
   cloud:
     consul:
       discovery:
         healthCheckPath: /management/health
+<<<<<<< Updated upstream
         instanceId: asdad:${spring.application.instance-id:${random.value}}
         service-name: asdad
+=======
+        instanceId: dsadadad:${spring.application.instance-id:${random.value}}
+        service-name: dsadadad
+>>>>>>> Stashed changes
       config:
         watch:
           enabled: false
@@ -134,13 +147,21 @@ spring:
       enabled: true
   task:
     execution:
+<<<<<<< Updated upstream
       thread-name-prefix: asdad-task-
+=======
+      thread-name-prefix: dsadadad-task-
+>>>>>>> Stashed changes
       pool:
         core-size: 2
         max-size: 50
         queue-capacity: 10000
     scheduling:
+<<<<<<< Updated upstream
       thread-name-prefix: asdad-scheduling-
+=======
+      thread-name-prefix: dsadadad-scheduling-
+>>>>>>> Stashed changes
       pool:
         size: 2
   thymeleaf:
@@ -182,7 +203,11 @@ info:
 
 jhipster:
   clientApp:
+<<<<<<< Updated upstream
     name: "asdadApp"
+=======
+    name: "dsadadadApp"
+>>>>>>> Stashed changes
   # By default CORS is disabled. Uncomment to enable.
   # cors:
   #   allowed-origins: "http://localhost:8100,http://localhost:9000"
@@ -192,12 +217,21 @@ jhipster:
   #   allow-credentials: true
   #   max-age: 1800
   mail:
+<<<<<<< Updated upstream
     from: asdad@localhost
   api-docs:
     default-include-pattern: /api/**
     management-include-pattern: /management/**
     title: Asdad API
     description: Asdad API documentation
+=======
+    from: dsadadad@localhost
+  api-docs:
+    default-include-pattern: /api/**
+    management-include-pattern: /management/**
+    title: Dsadadad API
+    description: Dsadadad API documentation
+>>>>>>> Stashed changes
     version: 0.0.1
     terms-of-service-url:
     contact-name:

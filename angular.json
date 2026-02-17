@@ -3,7 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< Updated upstream
     "asdad": {
+=======
+    "dsadadad": {
+>>>>>>> Stashed changes
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -81,15 +85,26 @@
         "serve": {
           "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
+<<<<<<< Updated upstream
             "buildTarget": "asdad:build:development",
+=======
+            "buildTarget": "dsadadad:build:development",
+>>>>>>> Stashed changes
             "port": 4200
           },
           "configurations": {
             "production": {
+<<<<<<< Updated upstream
               "buildTarget": "asdad:build:production"
             },
             "development": {
               "buildTarget": "asdad:build:development"
+=======
+              "buildTarget": "dsadadad:build:production"
+            },
+            "development": {
+              "buildTarget": "dsadadad:build:development"
+>>>>>>> Stashed changes
             }
           },
           "defaultConfiguration": "development"

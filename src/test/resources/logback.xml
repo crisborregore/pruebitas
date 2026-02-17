@@ -4,7 +4,11 @@
 <configuration scan="true">
     <include resource="org/springframework/boot/logging/logback/base.xml"/>
 
+<<<<<<< Updated upstream
     <logger name="k.k.k" level="INFO"/>
+=======
+    <logger name="g.g.g" level="INFO"/>
+>>>>>>> Stashed changes
 
     <logger name="tech.jhipster" level="WARN"/>
 
