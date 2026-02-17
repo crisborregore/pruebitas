@@ -1,7 +1,11 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 # asdad
 =======
 # dsadadad
+>>>>>>> Stashed changes
+=======
+# dasasdads
 >>>>>>> Stashed changes
 
 This application was generated using JHipster 8.1.0, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v8.1.0](https://www.jhipster.tech/documentation-archive/v8.1.0).
@@ -299,9 +303,13 @@ update src/main/webapp/app/app.config.ts
 ### Packaging as jar
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 To build the final jar and optimize the asdad application for production, run:
 =======
 To build the final jar and optimize the dsadadad application for production, run:
+>>>>>>> Stashed changes
+=======
+To build the final jar and optimize the dasasdads application for production, run:
 >>>>>>> Stashed changes
 
 ```

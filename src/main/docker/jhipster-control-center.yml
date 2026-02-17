@@ -31,9 +31,13 @@
 
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 name: asdad
 =======
 name: dsadadad
+>>>>>>> Stashed changes
+=======
+name: dasasdads
 >>>>>>> Stashed changes
 services:
   jhipster-control-center:

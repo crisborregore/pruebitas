@@ -23,9 +23,13 @@ module.exports = async (config, options, targetOptions) => {
       }),
       new WebpackNotifierPlugin({
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         title: 'Asdad',
 =======
         title: 'Dsadadad',
+>>>>>>> Stashed changes
+=======
+        title: 'Dasasdads',
 >>>>>>> Stashed changes
         contentImage: path.join(__dirname, 'logo-jhipster.png'),
       })

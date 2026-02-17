@@ -547,9 +547,13 @@
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "secret": "e86209c0-f30e-4741-baed-73763365da32",
 =======
       "secret": "9b8872cb-64a8-4d1f-8a3f-06def3523fb6",
+>>>>>>> Stashed changes
+=======
+      "secret": "3c2348ae-2de6-460b-9489-c3a641df91ea",
 >>>>>>> Stashed changes
       "redirectUris": [
         "/realms/jhipster/account/*"
@@ -596,9 +600,13 @@
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "secret": "0e3dba15-d819-4db7-9c8f-9851ac54729a",
 =======
       "secret": "fd42dfaa-d8a5-4b40-856b-4829f04b5cbe",
+>>>>>>> Stashed changes
+=======
+      "secret": "69bb4ba0-257f-431d-af31-654a0757f7e3",
 >>>>>>> Stashed changes
       "redirectUris": [
         "/realms/jhipster/account/*"
@@ -654,9 +662,13 @@
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "secret": "54df980c-3157-4c76-a287-6a69ce7eae06",
 =======
       "secret": "cc76f971-08ae-4ee1-87ec-93660cab5481",
+>>>>>>> Stashed changes
+=======
+      "secret": "614ead22-ddcb-4f0b-b2b1-fedd2fd49e1e",
 >>>>>>> Stashed changes
       "redirectUris": [],
       "webOrigins": [],
@@ -699,9 +711,13 @@
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "secret": "bec8923e-022b-47ab-b24a-cc103ec0a589",
 =======
       "secret": "c7058a40-cefd-4cbb-84af-61ae14c08364",
+>>>>>>> Stashed changes
+=======
+      "secret": "0a55d88e-1561-4296-8f7f-508fc51b5fb4",
 >>>>>>> Stashed changes
       "redirectUris": [],
       "webOrigins": [],
@@ -808,9 +824,13 @@
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "secret": "715e2952-5e72-4386-9a2e-a7680fc82d20",
 =======
       "secret": "51b00182-39f5-4920-9392-f3209af43ea9",
+>>>>>>> Stashed changes
+=======
+      "secret": "5713fbf3-fc88-46b0-bce9-84eeaeec779a",
 >>>>>>> Stashed changes
       "redirectUris": [],
       "webOrigins": [],
@@ -855,9 +875,13 @@
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "secret": "3272396e-4e48-44aa-874b-ca2431764cb3",
 =======
       "secret": "b10f0148-bb7e-4321-b656-ed9f554f004d",
+>>>>>>> Stashed changes
+=======
+      "secret": "5fb88c7f-0a9e-4700-8f5a-0f3b6c6067ab",
 >>>>>>> Stashed changes
       "redirectUris": [
         "/admin/jhipster/console/*"

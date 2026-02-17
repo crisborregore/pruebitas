@@ -71,13 +71,21 @@ public class CacheConfiguration {
     @Bean
     public HazelcastInstance hazelcastInstance(JHipsterProperties jHipsterProperties) {
         log.debug("Configuring Hazelcast");
+<<<<<<< Updated upstream
         HazelcastInstance hazelCastInstance = Hazelcast.getHazelcastInstanceByName("dsadadad");
+=======
+        HazelcastInstance hazelCastInstance = Hazelcast.getHazelcastInstanceByName("dasasdads");
+>>>>>>> Stashed changes
         if (hazelCastInstance != null) {
             log.debug("Hazelcast already initialized");
             return hazelCastInstance;
         }
         Config config = new Config();
+<<<<<<< Updated upstream
         config.setInstanceName("dsadadad");
+=======
+        config.setInstanceName("dasasdads");
+>>>>>>> Stashed changes
         config.getNetworkConfig().getJoin().getMulticastConfig().setEnabled(false);
         if (this.registration == null) {
             log.warn("No discovery service is set up, Hazelcast cannot create a cluster.");

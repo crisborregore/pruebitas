@@ -21,18 +21,26 @@ export class AlertErrorComponent implements OnDestroy {
 
   constructor(private alertService: AlertService, private eventManager: EventManager) {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     this.errorListener = eventManager.subscribe('asdadApp.error', (response: EventWithContent<unknown> | string) => {
 =======
     this.errorListener = eventManager.subscribe('dsadadadApp.error', (response: EventWithContent<unknown> | string) => {
+>>>>>>> Stashed changes
+=======
+    this.errorListener = eventManager.subscribe('dasasdadsApp.error', (response: EventWithContent<unknown> | string) => {
 >>>>>>> Stashed changes
       const errorResponse = (response as EventWithContent<AlertError>).content;
       this.addErrorAlert(errorResponse.message);
     });
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     this.httpErrorListener = eventManager.subscribe('asdadApp.httpError', (response: EventWithContent<unknown> | string) => {
 =======
     this.httpErrorListener = eventManager.subscribe('dsadadadApp.httpError', (response: EventWithContent<unknown> | string) => {
+>>>>>>> Stashed changes
+=======
+    this.httpErrorListener = eventManager.subscribe('dasasdadsApp.httpError', (response: EventWithContent<unknown> | string) => {
 >>>>>>> Stashed changes
       const httpErrorResponse = (response as EventWithContent<HttpErrorResponse>).content;
       switch (httpErrorResponse.status) {

@@ -99,28 +99,40 @@ management:
 mongock:
   migration-scan-package:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     - k.k.k.config.dbmigrations
 
 spring:
   application:
     name: asdad
 =======
+=======
+>>>>>>> Stashed changes
     - g.g.g.config.dbmigrations
 
 spring:
   application:
+<<<<<<< Updated upstream
     name: dsadadad
+>>>>>>> Stashed changes
+=======
+    name: dasasdads
 >>>>>>> Stashed changes
   cloud:
     consul:
       discovery:
         healthCheckPath: /management/health
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         instanceId: asdad:${spring.application.instance-id:${random.value}}
         service-name: asdad
 =======
         instanceId: dsadadad:${spring.application.instance-id:${random.value}}
         service-name: dsadadad
+>>>>>>> Stashed changes
+=======
+        instanceId: dasasdads:${spring.application.instance-id:${random.value}}
+        service-name: dasasdads
 >>>>>>> Stashed changes
       config:
         watch:
@@ -148,9 +160,13 @@ spring:
   task:
     execution:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       thread-name-prefix: asdad-task-
 =======
       thread-name-prefix: dsadadad-task-
+>>>>>>> Stashed changes
+=======
+      thread-name-prefix: dasasdads-task-
 >>>>>>> Stashed changes
       pool:
         core-size: 2
@@ -158,9 +174,13 @@ spring:
         queue-capacity: 10000
     scheduling:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       thread-name-prefix: asdad-scheduling-
 =======
       thread-name-prefix: dsadadad-scheduling-
+>>>>>>> Stashed changes
+=======
+      thread-name-prefix: dasasdads-scheduling-
 >>>>>>> Stashed changes
       pool:
         size: 2
@@ -204,9 +224,13 @@ info:
 jhipster:
   clientApp:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     name: "asdadApp"
 =======
     name: "dsadadadApp"
+>>>>>>> Stashed changes
+=======
+    name: "dasasdadsApp"
 >>>>>>> Stashed changes
   # By default CORS is disabled. Uncomment to enable.
   # cors:
@@ -217,6 +241,7 @@ jhipster:
   #   allow-credentials: true
   #   max-age: 1800
   mail:
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     from: asdad@localhost
   api-docs:
@@ -231,6 +256,14 @@ jhipster:
     management-include-pattern: /management/**
     title: Dsadadad API
     description: Dsadadad API documentation
+>>>>>>> Stashed changes
+=======
+    from: dasasdads@localhost
+  api-docs:
+    default-include-pattern: /api/**
+    management-include-pattern: /management/**
+    title: Dasasdads API
+    description: Dasasdads API documentation
 >>>>>>> Stashed changes
     version: 0.0.1
     terms-of-service-url:

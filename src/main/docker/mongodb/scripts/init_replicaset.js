@@ -5,6 +5,7 @@ if (status.errmsg === 'no replset config has been received') {
 for (var i = 1; i <= param; i++) {
   if (i!==1)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     rs.add(folder+"_asdad-mongodb-node_" + i + ":27018");
 }
 var cfg = rs.conf();
@@ -14,5 +15,11 @@ cfg.members[0].host = folder+"_asdad-mongodb-node_1:27018";
 }
 var cfg = rs.conf();
 cfg.members[0].host = folder+"_dsadadad-mongodb-node_1:27018";
+>>>>>>> Stashed changes
+=======
+    rs.add(folder+"_dasasdads-mongodb-node_" + i + ":27018");
+}
+var cfg = rs.conf();
+cfg.members[0].host = folder+"_dasasdads-mongodb-node_1:27018";
 >>>>>>> Stashed changes
 rs.reconfig(cfg);

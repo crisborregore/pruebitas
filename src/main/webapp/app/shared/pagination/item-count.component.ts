@@ -8,9 +8,13 @@ import { Component, Input } from '@angular/core';
   selector: 'jhi-item-count',
   template: `
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <div>显示第 {{first}} - {{second}} 条，共 {{total}} 条</div>
 =======
     <div>Showing {{first}} - {{second}} of {{total}} items.</div>
+>>>>>>> Stashed changes
+=======
+    <div>Εμφάνιση {{first}} - {{second}} του {{total}} αντικείμενα.</div>
 >>>>>>> Stashed changes
   `,
 })

@@ -29,9 +29,13 @@ export const appConfig: ApplicationConfig = {
     importProvidersFrom(HttpClientModule),
     Title,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     { provide: LOCALE_ID, useValue: 'zh-Hans' },
 =======
     { provide: LOCALE_ID, useValue: 'hi' },
+>>>>>>> Stashed changes
+=======
+    { provide: LOCALE_ID, useValue: 'el' },
 >>>>>>> Stashed changes
     { provide: NgbDateAdapter, useClass: NgbDateDayjsAdapter },
     httpInterceptorProviders,

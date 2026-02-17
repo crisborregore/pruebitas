@@ -1,5 +1,9 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 org.springframework.test.context.ContextCustomizerFactory = k.k.k.config.\
+=======
+org.springframework.test.context.ContextCustomizerFactory = g.g.g.config.\
+>>>>>>> Stashed changes
 =======
 org.springframework.test.context.ContextCustomizerFactory = g.g.g.config.\
 >>>>>>> Stashed changes

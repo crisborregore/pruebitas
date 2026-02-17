@@ -42,9 +42,13 @@ describe('Alert Error Component', () => {
     it('Should display an alert on status 0', () => {
       // GIVEN
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       eventManager.broadcast({ name: 'asdadApp.httpError', content: { status: 0 } });
 =======
       eventManager.broadcast({ name: 'dsadadadApp.httpError', content: { status: 0 } });
+>>>>>>> Stashed changes
+=======
+      eventManager.broadcast({ name: 'dasasdadsApp.httpError', content: { status: 0 } });
 >>>>>>> Stashed changes
       // THEN
       expect(comp.alerts.length).toBe(1);
@@ -54,9 +58,13 @@ describe('Alert Error Component', () => {
     it('Should display an alert on status 404', () => {
       // GIVEN
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       eventManager.broadcast({ name: 'asdadApp.httpError', content: { status: 404 } });
 =======
       eventManager.broadcast({ name: 'dsadadadApp.httpError', content: { status: 404 } });
+>>>>>>> Stashed changes
+=======
+      eventManager.broadcast({ name: 'dasasdadsApp.httpError', content: { status: 404 } });
 >>>>>>> Stashed changes
       // THEN
       expect(comp.alerts.length).toBe(1);
@@ -66,11 +74,16 @@ describe('Alert Error Component', () => {
     it('Should display an alert on generic error', () => {
       // GIVEN
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       eventManager.broadcast({ name: 'asdadApp.httpError', content: { error: { message: 'Error Message' } } });
       eventManager.broadcast({ name: 'asdadApp.httpError', content: { error: 'Second Error Message' } });
 =======
       eventManager.broadcast({ name: 'dsadadadApp.httpError', content: { error: { message: 'Error Message' } } });
       eventManager.broadcast({ name: 'dsadadadApp.httpError', content: { error: 'Second Error Message' } });
+>>>>>>> Stashed changes
+=======
+      eventManager.broadcast({ name: 'dasasdadsApp.httpError', content: { error: { message: 'Error Message' } } });
+      eventManager.broadcast({ name: 'dasasdadsApp.httpError', content: { error: 'Second Error Message' } });
 >>>>>>> Stashed changes
       // THEN
       expect(comp.alerts.length).toBe(2);
@@ -94,9 +107,13 @@ describe('Alert Error Component', () => {
         },
       });
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       eventManager.broadcast({ name: 'asdadApp.httpError', content: response });
 =======
       eventManager.broadcast({ name: 'dsadadadApp.httpError', content: response });
+>>>>>>> Stashed changes
+=======
+      eventManager.broadcast({ name: 'dasasdadsApp.httpError', content: response });
 >>>>>>> Stashed changes
       // THEN
       expect(comp.alerts.length).toBe(1);
@@ -112,9 +129,13 @@ describe('Alert Error Component', () => {
         error: 'Bad Request',
       });
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       eventManager.broadcast({ name: 'asdadApp.httpError', content: response });
 =======
       eventManager.broadcast({ name: 'dsadadadApp.httpError', content: response });
+>>>>>>> Stashed changes
+=======
+      eventManager.broadcast({ name: 'dasasdadsApp.httpError', content: response });
 >>>>>>> Stashed changes
       // THEN
       expect(comp.alerts.length).toBe(1);
@@ -138,9 +159,13 @@ describe('Alert Error Component', () => {
         },
       });
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       eventManager.broadcast({ name: 'asdadApp.httpError', content: response });
 =======
       eventManager.broadcast({ name: 'dsadadadApp.httpError', content: response });
+>>>>>>> Stashed changes
+=======
+      eventManager.broadcast({ name: 'dasasdadsApp.httpError', content: response });
 >>>>>>> Stashed changes
       // THEN
       expect(comp.alerts.length).toBe(1);
@@ -160,9 +185,13 @@ describe('Alert Error Component', () => {
         },
       });
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       eventManager.broadcast({ name: 'asdadApp.httpError', content: response });
 =======
       eventManager.broadcast({ name: 'dsadadadApp.httpError', content: response });
+>>>>>>> Stashed changes
+=======
+      eventManager.broadcast({ name: 'dasasdadsApp.httpError', content: response });
 >>>>>>> Stashed changes
       // THEN
       expect(comp.alerts.length).toBe(1);
@@ -183,9 +212,13 @@ describe('Alert Error Component', () => {
         },
       });
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       eventManager.broadcast({ name: 'asdadApp.httpError', content: response });
 =======
       eventManager.broadcast({ name: 'dsadadadApp.httpError', content: response });
+>>>>>>> Stashed changes
+=======
+      eventManager.broadcast({ name: 'dasasdadsApp.httpError', content: response });
 >>>>>>> Stashed changes
       // THEN
       expect(comp.alerts.length).toBe(1);

@@ -19,7 +19,11 @@ logging:
     tech.jhipster: DEBUG
     org.hibernate.SQL: DEBUG
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     k.k.k: DEBUG
+=======
+    g.g.g: DEBUG
+>>>>>>> Stashed changes
 =======
     g.g.g: DEBUG
 >>>>>>> Stashed changes
@@ -61,9 +65,13 @@ spring:
   data:
     mongodb:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       uri: mongodb://localhost:27017/asdad
 =======
       uri: mongodb://localhost:27017/dsadadad
+>>>>>>> Stashed changes
+=======
+      uri: mongodb://localhost:27017/dasasdads
 >>>>>>> Stashed changes
   messages:
     cache-duration: PT1S # 1 second, see the ISO 8601 standard

@@ -4,7 +4,11 @@
 <configuration scan="true">
     <!-- Patterns based on https://github.com/spring-projects/spring-boot/blob/v3.0.0/spring-boot-project/spring-boot/src/main/resources/org/springframework/boot/logging/logback/defaults.xml -->
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <conversionRule conversionWord="crlf" converterClass="k.k.k.config.CRLFLogConverter" />
+=======
+    <conversionRule conversionWord="crlf" converterClass="g.g.g.config.CRLFLogConverter" />
+>>>>>>> Stashed changes
 =======
     <conversionRule conversionWord="crlf" converterClass="g.g.g.config.CRLFLogConverter" />
 >>>>>>> Stashed changes

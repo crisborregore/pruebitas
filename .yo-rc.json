@@ -5,6 +5,7 @@
     "authType": "oauth2",
     "authenticationType": "oauth2",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "baseName": "asdad",
     "clientFramework": "angular",
     "creationTimestamp": 1771326943552,
@@ -15,6 +16,12 @@
     "creationTimestamp": 1771327156505,
     "dataBaseName": "dsadadad",
 >>>>>>> Stashed changes
+=======
+    "baseName": "dasasdads",
+    "clientFramework": "angular",
+    "creationTimestamp": 1771327540346,
+    "dataBaseName": "dasasdads",
+>>>>>>> Stashed changes
     "databaseType": "mongodb",
     "devDatabaseType": "mongodb",
     "devServerPort": 4200,
@@ -23,6 +30,7 @@
     "entities": [],
     "frontFramework": "angular",
     "internalization": false,
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     "javaPackageName": "k.k.k",
     "jhipsterVersion": "8.1.0",
@@ -40,6 +48,16 @@
       "hi"
     ],
     "nativeLanguage": "hi",
+    "packageName": "g.g.g",
+>>>>>>> Stashed changes
+=======
+    "javaPackageName": "g.g.g",
+    "jhipsterVersion": "8.1.0",
+    "jwtSecretKey": "YmM3M2VmYmQ0MjJmNzYyOTFlMWJkZTUyYzEyNDRmYzc2MTRiN2Y1M2FiODhjNjkwZWYxZTBhYmYxYWQ5ZTRjZjBjMDkzYjFmOGIyNGFkZGYwZjhiNGExMzNmYTQ1OGQ4MGU1ZTZlZGI3YTg3ZjM5NDFlNDAzZmM0MjNiNmFmY2Q=",
+    "languages": [
+      "el"
+    ],
+    "nativeLanguage": "el",
     "packageName": "g.g.g",
 >>>>>>> Stashed changes
     "prodDatabaseType": "mongodb",
